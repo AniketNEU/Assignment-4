@@ -8,6 +8,7 @@ package MoonRoverStatePattern;
  * Represents the Move Backward state of the lunar buggy.
  * Implements the State interface for handling pedal presses.
  * @author anikettiwari
+ * @version 1.0
  */
 public class MoveBackward implements State {
 
@@ -15,15 +16,22 @@ public class MoveBackward implements State {
     private String name = "Move Backward";
     private String subState = "Accelerate";
 
+    /**
+    * Gets the name of the current state.
+    * @return The name of the current state.     */
     @Override
     public String getName() {
-        return name;
+    return name;
     }
 
-    @Override
-    public String getSubState() {
-        return subState;
-    }
+   /**
+   * Gets the substate of the current state.
+   * @return The substate of the current state.
+   */
+   @Override
+   public String getSubState() {
+    return subState;
+   }
     /**
      * Handles the press of the left pedal based on the number of times pressed.
      * @param numOfTimesPressed The number of times the left pedal is pressed.

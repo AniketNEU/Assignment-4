@@ -17,15 +17,22 @@ public class MoveForward implements State {
     private String subState = "Accelerate";
     private String name = "Move Forward";
     
+    /**
+    * Gets the name of the current state.
+    * @return The name of the current state.     */
     @Override
     public String getName() {
-        return name;
+    return name;
     }
 
-    @Override
-    public String getSubState() {
-        return subState;
-    }
+   /**
+   * Gets the substate of the current state.
+   * @return The substate of the current state.
+   */
+   @Override
+   public String getSubState() {
+    return subState;
+   }
 
     /**
      * Handles the action when the right pedal is pressed a certain number of times.

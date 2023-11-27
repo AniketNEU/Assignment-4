@@ -8,21 +8,29 @@ package MoonRoverStatePattern;
  * Represents the At Rest state of the lunar buggy.
  * Implements the State interface for handling pedal presses.
  * @author anikettiwari
+ * @version 1.0
  */
 public class AtRest implements State {
     
     private String name = "At Rest";
     private String subState = "None";
 
+    /**
+    * Gets the name of the current state.
+    * @return The name of the current state.     */
     @Override
     public String getName() {
-        return name;
+    return name;
     }
 
-    @Override
-    public String getSubState() {
-        return subState;
-    }
+   /**
+   * Gets the substate of the current state.
+   * @return The substate of the current state.
+   */
+   @Override
+   public String getSubState() {
+    return subState;
+   }
 
     /**
      * Handles the press of the right pedal based on the number of times pressed.

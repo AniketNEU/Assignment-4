@@ -5,37 +5,36 @@
 package MoonRoverStatePattern;
 
 /**
- *
+ * Demo class for testing the lunar rover state pattern.
  * @author anikettiwari
+ * @version 1.0
  */
 public class RoverDemo {
+    /**
+     * Main method to run the lunar rover state pattern demo.
+     * @param args Command line arguments (not used).
+     */
     public static void main(String[] args) {
         Context context = Context.getInstance();
 
         // Initial state
         printState(context);
 
-        // Press right pedal once
         context.pressRightPedal(1);
         printState(context);
 
-        // Press right pedal for 5 seconds
         context.pressRightPedalForTime(5);
         printState(context);
 
-        // Press left pedal once
         context.pressLeftPedal(1);
         printState(context);
 
-        // Press left pedal for 3 seconds
         context.pressLeftPedalForTime(3);
         printState(context);
 
-        // Press right pedal twice
         context.pressRightPedal(2);
         printState(context);
 
-        // Press right pedal thrice
         context.pressRightPedal(3);
         printState(context);
     }

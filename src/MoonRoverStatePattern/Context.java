@@ -8,6 +8,7 @@ package MoonRoverStatePattern;
  * Represents the context of the lunar buggy, maintaining the current state.
  * Implements the Singleton pattern for ensuring a single instance of the context.
  * @author anikettiwari
+ * @version 1.0
  */
 public class Context {
     private State state;
